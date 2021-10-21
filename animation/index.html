@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Animation</title>
+</head>
+<style>
+    #Path_1 {
+        stroke-dasharray: 3530;
+        stroke-dashoffset: 3530;
+        animation: path_1 2s ease infinite;
+    }
+
+    @keyframes path_1 {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="885.355" height="887.379" viewBox="0 0 885.355 887.379">
+        <path id="Path_1" data-name="Path 1" d="M-130.535,306.607H176.071V-1.012H443.213V306.607H749.82V574.761H443.213V881.367H176.071V574.761H-130.535Z" transform="translate(133.035 3.512)" fill="none" stroke="#000" stroke-width="5"/>
+    </svg>  
+</body>
+</html>
