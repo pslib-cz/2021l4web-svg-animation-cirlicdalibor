@@ -7,6 +7,7 @@
     <title>Cross Animation</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     #Path_1 {
         stroke-dasharray: 3530;
         stroke-dashoffset: 3530;
@@ -18,10 +19,45 @@
             stroke-dashoffset: 0;
         }
     }
+
+    svg:hover {
+        transform: rotate(20deg);
+        transition: 300ms ease;
+    }
+
+    svg {
+        transition: 300ms ease;
+    }
+
+    .container {
+        max-width: fit-content;
+        margin-top: 10rem;
+        margin: auto;
+    }
+
+    p {
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    body {
+        animation-name: color__change;
+        animation-duration: 2s;
+    }
+
+    @keyframes color__change {
+        from {background-color: black;}
+        to {background-color: white;}
+    }
 </style>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" width="885.355" height="887.379" viewBox="0 0 885.355 887.379">
-        <path id="Path_1" data-name="Path 1" d="M-130.535,306.607H176.071V-1.012H443.213V306.607H749.82V574.761H443.213V881.367H176.071V574.761H-130.535Z" transform="translate(133.035 3.512)" fill="none" stroke="#000" stroke-width="5"/>
-    </svg>  
+    <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="885.355" height="887.379" viewBox="0 0 885.355 887.379">
+            <path id="Path_1" data-name="Path 1" d="M-130.535,306.607H176.071V-1.012H443.213V306.607H749.82V574.761H443.213V881.367H176.071V574.761H-130.535Z" transform="translate(133.035 3.512)" fill="none" stroke="#000" stroke-width="5"/>
+        </svg>
+    </div>
+    <p>název lékárny</p>
 </body>
 </html>
